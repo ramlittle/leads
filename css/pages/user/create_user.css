@@ -27,7 +27,7 @@
 /* Form */
 .create-user > div:nth-child(3) > form {
     background-color: skyblue;
-    padding:1rem;
+    padding:0.5rem;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -60,7 +60,7 @@
 }
 
 .create-user > div:nth-child(3) > form > div >div > span:nth-child(2) > input{    
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:#333;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -68,7 +68,7 @@
 }
 
 .create-user > div:nth-child(3) > form > div >div > span:nth-child(2) > button{
-    padding: 1rem;
+    padding: 0.5rem;
     width:100%;
     color: white;
     border-radius: 0.5rem;
@@ -79,4 +79,42 @@
 
 .create-user > div:nth-child(3) > form > div >div > span:nth-child(2) > button:hover{
     background-color:darkblue;
+}
+
+
+/* Alert divs */
+.success-box{
+    background-color: green;
+    color:white;
+    padding:1rem;
+    font-weight:bold;
+    text-align:center;
+}
+
+.exist-box{
+    background-color: orange;
+    color:white;
+    padding:1rem;
+    font-weight:bold;
+    text-align:center;
+}
+
+.fail-box{
+    background-color: orange;
+    color:white;
+    padding:1rem;
+    font-weight:bold;
+    text-align:center;
+}
+/* fade effect */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.show-then-fade{
+    display: block;
+    animation: fadeInOut 3s forwards;
 }

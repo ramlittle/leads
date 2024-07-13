@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" type="text/css" href="/leads/css/pages/user/create_user.css" />
+
 <?php
 include_once "../../config/dbleads.php";
 include_once "../../classes/User.php";
@@ -16,16 +19,16 @@ if ($_POST) {
     $user->access_level = 2;//default access level for standard user
 
     if ($user->createUser() === true) {
-        echo "<div class='alert alert-success' role='alert'>Added successfully</div>";
+        echo "<div class='success-box show-then-fade'>Added successfully!</div>";
     } elseif ($user->createUser() === 'email_exists') {
-        echo "<div class='alert alert-danger' role='alert'>Email already exists</div>";
+        echo "<div class='exist-box show-then-fade'>Email already exists!</div>";
     } else {
-        echo "<div class='alert alert-danger' role='alert'>Failed Adding</div>";
+        echo "<div class='fail-box show-then-fade'>Failed Adding!</div>";
     }
 }
 ?>
 
-<link rel="stylesheet" type="text/css" href="/leads/css/pages/user/create_user.css" />
+
 
 <section class="create-user">
     <div>
@@ -41,19 +44,19 @@ if ($_POST) {
             <div>
                 <div>
                     <span><label>First Name</label></span>
-                    <span><input type="text" class="form-control" name="first_name" required /></span>
+                    <span><input type="text" class="form-control" name="first_name" placeholder="given name..."required /></span>
                 </div>
                 <div>
                     <span><label>Last Name</label></span>
-                    <span><input type="text" class="form-control" name="last_name" required /></span>
+                    <span><input type="text" class="form-control" name="last_name" placeholder="surname..." required /></span>
                 </div>
                 <div>
                     <span><label>Email</label></span>
-                    <span><input type="email" class="form-control" name="email" required /></s>
+                    <span><input type="email" class="form-control" name="email" placeholder="youremail@example.com" required /></s>
                 </div>
                 <div>
                     <span><label>Password</label></span>
-                    <span><input type="text" class="form-control" name="password" required /></span>
+                    <span><input type="text" class="form-control" name="password"placeholder="password..." required /></span>
                 </div>
                 <div>
                     <span></span>
