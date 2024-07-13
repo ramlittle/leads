@@ -1,0 +1,46 @@
+.dashboard{
+    display:flex;
+    flex-direction:column;  
+    gap:0.5rem;  
+}
+
+
+.dashboard > div:nth-child(1){
+    font-size: 1.5rem;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: black; 
+    padding: 1rem;
+    color: #333;
+}
+
+
+
+.dashboard > div:nth-child(2){
+    display:flex;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    border:1px solid darkgrey;
+}
+
+.dashboard > div:nth-child(2) > div:nth-child(1){
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    font-size: 2rem;
+    color:white;
+    padding:1rem;
+    gap:1rem;
+}
+
+.dashboard > div:nth-child(2) > div:nth-child(1) > span:nth-child(2){
+    font-size: 1.5rem;
+    color:white;
+}
+
+.dashboard > div:nth-child(2) > div:nth-child(2) > img {
+    width: 20rem;
+    height:20rem;
+    margin:1rem;
+    border-radius: 2rem;
+    border:1px solid white;
+}

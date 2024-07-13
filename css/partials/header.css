@@ -1,0 +1,20 @@
+header {
+    color: black;
+    padding: 0.5rem;
+}
+
+nav>ul {
+    display:flex;
+    justify-content: end;
+    gap:0.5rem;
+}
+
+nav > ul a{
+    text-decoration: none;
+    color: #333;
+}
+
+nav > ul a:hover{
+    color: dodgerblue;
+    text-decoration:underline;
+}
