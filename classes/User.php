@@ -49,7 +49,7 @@ class User
         return $row['count'] > 0;
     }
 
-    public function addUser()
+    public function createUser()
     {
         // Check if email already exists
         if ($this->doesEmailExist($this->email)) {            

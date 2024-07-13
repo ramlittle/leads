@@ -1,4 +1,6 @@
 <?php include_once "./partials/header.php" ?>
+<link rel="stylesheet" type="text/css" href="/leads/css/index.css"/>
+
 <div class="dashboard">
     <div>Welcome to this page</div>
     <div>
