@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../../css/pages/auth/login.css" />
+<link rel="stylesheet" type="text/css" href="/leads/css/pages/auth/login.css" />
 <section class="login">
     <div>
         <img src="../../images/almost-there.gif" />
@@ -21,7 +21,7 @@
         </form>
         <div>
             <span>Don't have an account?</span>
-            <span><a href="">Sign up</a></span>
+            <span><a href="/leads/pages/user/create_user.php">Sign up</a></span>
         </div>
         <div>
             <span><a href="">Forgot password</a></span>

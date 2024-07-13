@@ -42,7 +42,7 @@ class User
     {
         $query = "SELECT COUNT(*) as count FROM users WHERE email = :email";
         $statement = $this->conn->prepare($query);
-        $statement->bindParam(1, $email);
+        $statement->bindParam(':email', $email);
         $statement->execute();
         $row = $statement->fetch(PDO::FETCH_ASSOC);
 
@@ -62,7 +62,7 @@ class User
                       email = :email,
                       password = :password,
                       is_active = :is_active,
-                      access_level = ";
+                      access_level = :access_level";
         $statement = $this->conn->prepare($query);
         $hash_password = password_hash($this->password, PASSWORD_BCRYPT);
 
@@ -71,6 +71,7 @@ class User
         $statement->bindParam(':email', $this->email, PDO::PARAM_STR);
         $statement->bindParam(':password', $hash_password, PDO::PARAM_STR);
         $statement->bindParam(':is_active', $this->is_active, PDO::PARAM_BOOL);
+        $statement->bindParam(':access_level', $this->access_level, PDO::PARAM_INT);
 
         if ($statement->execute()) {
             return true;
