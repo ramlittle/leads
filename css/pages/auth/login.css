@@ -1,0 +1,75 @@
+.login {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+}
+
+.login>div:nth-child(1) {
+    width: 50%;
+}
+
+.login>div:nth-child(1)>img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* login box */
+.login>div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login>div:nth-child(2)>form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+.login>div:nth-child(2)>form>div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    width: 75%;
+}
+
+.login form label {
+    color: #333;
+    font-size: x-large;
+}
+
+.login form input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.login form button {
+    padding: 0.5rem;
+    background-color: dodgerblue;
+    border: 1px solid grey;
+    border-radius:0.5rem;
+    color: white;
+    font-size: x-large;
+
+}
+
+.login form button:hover {
+    background-color: darkblue;
+}
+
+.login>div:nth-child(2) > div a {
+    text-decoration:none;
+    color: dodgerblue;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+.login>div:nth-child(2) > div a:hover{
+    text-decoration:underline;
+}
