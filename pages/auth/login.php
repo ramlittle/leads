@@ -1,7 +1,7 @@
-<link rel="stylesheet" type="text/css" href="../css/pages/auth/login.css" />
+<link rel="stylesheet" type="text/css" href="../../css/pages/auth/login.css" />
 <section class="login">
     <div>
-        <img src="../images/almost-there.gif" />
+        <img src="../../images/almost-there.gif" />
     </div>
     <div>
         <form action="" method="post">
