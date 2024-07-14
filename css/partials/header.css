@@ -18,3 +18,24 @@ nav > ul a:hover{
     color: dodgerblue;
     text-decoration:underline;
 }
+
+/* Logged in info */
+header > div {
+    display:flex;
+    gap:0.5rem;
+    font-size:small;    
+    justify-content: end;
+    align-items: center;
+}
+
+header > div >span:nth-child(2){
+    padding:0.25rem;
+    background-color: darkgrey;
+}
+header > div >span:nth-child(2):hover{
+    background-color: red;
+}
+header > div >span:nth-child(2) a{
+    text-decoration:none;
+    color:white;
+}

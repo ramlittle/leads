@@ -8,6 +8,28 @@
     
 </head>
 
+<?php
+function showWhoIsLoggedIn(){
+    if (isset($_SESSION['email'])) {
+        // htmlspecialchars is used here to avoid prevent XSS attacks
+        return htmlspecialchars($_SESSION['email']);
+    } else {
+        return "Not logged in.";
+    }
+}
+
+?>
+
+<script>
+    function confirmLogout(){
+        const confirmedLogout=window.confirm("You are about to be logged out");
+        if(confirmedLogout){
+            return true;
+        }
+        return false;
+    }
+</script>
+
 <body>
 
 <header>
@@ -18,5 +40,9 @@
             <a href ="">Profile</a>
         </ul>
     </nav>
+    <div>
+        <span><?php echo showWhoIsLoggedIn(); ?></span>
+        <span><a href ="/leads/pages/auth/logout.php" onclick="return confirmLogout();">Logout</a></span>
+    </div>
     <hr/>
 </header>

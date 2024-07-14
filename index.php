@@ -1,3 +1,4 @@
+<?php require_once "./pages/auth/check-login.php" ?>
 <?php include_once "./partials/header.php" ?>
 <link rel="stylesheet" type="text/css" href="/leads/css/index.css"/>
 
