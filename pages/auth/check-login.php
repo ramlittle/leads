@@ -11,8 +11,5 @@ if (!isset($_SESSION['email'])) {
     header("Location: /leads/pages/auth/login.php");
     exit(); // Ensure that no further code execution happens after redirection
 }
-$email = $_SESSION['email'];
-$userId = $_SESSION['user_id']; //check what user id is in session after logging in
-$isAdmin = $_SESSION['is_active'];
-$accessLevel = $_SESSION['access_level'];
+
 ?>
