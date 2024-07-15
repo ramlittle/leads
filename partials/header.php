@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leads Management</title>
-    <link rel="stylesheet" type="text/css" href="./css/partials/header.css" />
-
+    <link rel="stylesheet" type="text/css" href="/leads/css/partials/header.css" />
 </head>
 
 <?php
@@ -50,7 +49,7 @@ function isUserAdmin()
         <nav>
             <ul>
                 <a href="">Dashboard</a>
-                <a href="">Leads</a>
+                <a href="/leads/pages/lead/leads_list.php">Leads</a>
                 <?php echo isUserAdmin(); ?>
                 <a href="">Profile</a>
             </ul>
